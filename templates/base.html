@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+    <title>Attendance Management System</title>
+    <script src="https://kit.fontawesome.com/0eec1bb054.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+     <a href="{{url_for('index')}}"><i class="fa-solid fa-house"></i>UTAMU AMS</a>
+     <a href="{{url_for('login')}}">Login</a>
+    </nav>
+    
+    <main>
+        {% block content %}
+        
+        {% endblock content%}
+    </main>
+    <footer>
+        CopyRight@2022
+    </footer>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{% block content %}
+    <h1>WELCOME TO I-CODE</h1>
+    <P>I - Stands for Internet</P>
+    <p>CODE - Stands for Language</p>
+    <h2>Meaning I-CODE stands for Internet Language</h2>
+    <div>
+        <form  class="box" action="{{url_for('login')}}" method="POST" >
+            <h1>LOGIN HERE</h1>
+            <label for="Uname">Username:</label><br>
+            <input type="text" name="username" placeholder="Enter username" id="username"><br>
+            <label for="pass">Password:</label><br>
+            <input type="text" name="password" placeholder="Enter password" id="password"><br><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+{% endblock content%}
